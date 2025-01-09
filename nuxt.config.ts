@@ -20,6 +20,12 @@ export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
   compatibilityDate: '2024-07-30',
 
+  nitro: {
+    unenv: {
+      external: ['https://cdn.skypack.dev/@mozilla/readability'],
+    },
+  },
+
   // https://hub.nuxt.com/docs/getting-started/installation#options
   hub: {
     ai: true,
