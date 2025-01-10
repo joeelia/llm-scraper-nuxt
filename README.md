@@ -52,6 +52,45 @@ export default defineCachedEventHandler(async () => {
 })
 ```
 
+Visiting https://llm-scraper.nuxt.dev/api/top-5-hn will return the top 5 stories on Hacker News as JSON:
+
+```json
+{
+  "top": [
+    {
+      "title": "Visualizing All ISBNs",
+      "points": 107,
+      "by": "RyanShook",
+      "commentsURL": "https://news.ycombinator.com/item?id=42652577"
+    },
+    {
+      "title": "Samsung Display to Begin Mass Production of Rollable OLED for Laptops",
+      "points": 21,
+      "by": "gnabgib",
+      "commentsURL": "https://news.ycombinator.com/item?id=42653352"
+    },
+    {
+      "title": "Predictions Scorecard, 2025 January 01",
+      "points": 158,
+      "by": "timr",
+      "commentsURL": "https://news.ycombinator.com/item?id=42651275"
+    },
+    {
+      "title": "Show HN: Tetris in a PDF",
+      "points": 947,
+      "by": "ThomasRinsma",
+      "commentsURL": "https://news.ycombinator.com/item?id=42645218"
+    },
+    {
+      "title": "Bird-inspired drone uses legs to walk and jump into the air",
+      "points": 40,
+      "by": "bookofjoe",
+      "commentsURL": "https://news.ycombinator.com/item?id=42617825"
+    }
+  ]
+}
+```
+
 ## Setup
 
 Make sure to install the dependencies with [pnpm](https://pnpm.io/installation#using-corepack):
