@@ -2,8 +2,6 @@
 
 This is a demo of a LLM Scraper with Nuxt & Cloudflare AI/Browser based on [llm-scraper-worker](https://github.com/threepointone/llm-scraper-worker) and [workers-ai-provider](https://github.com/threepointone/workers-ai-provider).
 
-https://llm-scraper.nuxt.dev
-
 ## Features
 
 - Leverage Cloudflare AI with `@cf/meta/llama-3.1-70b-instruct`
@@ -52,7 +50,7 @@ export default defineCachedEventHandler(async () => {
 })
 ```
 
-Visiting https://llm-scraper.nuxt.dev/api/top-5-hn will return the top 5 stories on Hacker News as JSON:
+Visiting http://localhost:3000/api/top-5-hn will return the top 5 stories on Hacker News as JSON:
 
 ```json
 {
